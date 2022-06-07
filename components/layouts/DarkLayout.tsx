@@ -1,6 +1,11 @@
+import { FC } from "react"
+
+type FuncionProps = {
+  children: React.ReactNode
+}
 
 
-export const DarkLayout = ({ children }) => {
+export const DarkLayout: FC <FuncionProps> = ({ children }) => {
   return (
     <div style={{
         backgroundColor: 'rgba(0,0,0,0.3)',
